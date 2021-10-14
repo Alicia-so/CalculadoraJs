@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+        <script  src="script.js"></script>
+
+        <style>
+            *{
+                font: Arial;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+    <form name="frm_calc" acton>
+
+    <center>
+        <div class = "calculadora">
+    <table width="200" cellpadding="4" cellspacing="4" style="color:#d6c1ff; background-color:#70b6f0; border:2pt solid#d6c1ff">
+        <tr>
+        <td colspan="5"align="Center" bgColor="#d6c1ff"><Font Face="Verdana" Size="4" Color="#000000"><b>Calculadora</b></font></td>
+        </tr>
+        <tr>
+            <center>
+        <td colspan="5" align = "center" border:2pt solid#FFB90F><input type="text" name="txt_01" value="0" style=" text-align: center; width: 270px; color:#000000; background-color:#ffffff;border:2pt solid#d6c1ff"></td>
+            </center>
+        </tr>
+        <div id="botoes">
+        <tr>
+        <td><center><input type="reset" value="AC" onclick="" style="color:#d6c1ff; background-color:#000000; cursor:hand; padding:20px; border:0"></center></td>
+        <td><center><input type="reset" value="CE" onclick="" style="color:#d6c1ff; background-color:#000000; cursor:hand; padding:20px; border:0"></center></td>
+        <td><center><input type="reset" value="%" onclick="" style="color:#d6c1ff; background-color:#000000; cursor:hand; padding:20px; border:0"></center></td>
+        <td><center><input type="button" value="/" name="btn_divi" onclick="operacao('/')" style="color:#d6c1ff; background-color:#000000; cursor:hand; padding:20px; border:0"></center></td>
+        </tr>
+
+        <tr>
+        <td><center><input type="button" value="7" name="btn_7" onclick="numero(7)" style="color:#d6c1ff; background-color:#000000; cursor:hand; padding:20px; border:0"></center></td>
+        <td><center><input type="button" value="8" name="btn_8" onclick="numero(8)" style="color:#d6c1ff; background-color:#000000; cursor:hand; padding:20px; border:0"></center></td>
+        <td><center><input type="button" value="9" name="btn_9" onclick="numero(9)" style="color:#d6c1ff; background-color:#000000; cursor:hand; padding:20px; border:0"></center></td>
+        <td><center><input type="button" value="*" name="btn_mult" onclick="operacao('*')" style="color:#d6c1ff; background-color:#000000; cursor:hand; padding:20px; border:0"></center></td>
+        </tr>
+
+
+
+        <tr>
+        <td><center><input type="button" value="4" name="btn_4" onclick="numero(4)" style="color:#d6c1ff; background-color:#000000; cursor:hand; padding:20px; border:0"></center></td>
+        <td><center><input type="button" value="5" name="btn_5" onclick="numero(5)" style="color:#d6c1ff; background-color:#000000; cursor:hand; padding:20px; border:0"></center></td>
+        <td><center><input type="button" value="6" name="btn_6" onclick="numero(6)" style="color:#d6c1ff; background-color:#000000; cursor:hand; padding:20px; border:0"></center></td>
+        <td><center><input type="button" value="-" name="btn_subt" onclick="numero('-')" style="color:#d6c1ff; background-color:#000000; cursor:hand; padding:20px; border:0"></center></td>
+        </tr>
+
+        <tr>
+        <td><center><input type="button" value="1" name="btn_1" onclick="numero(1)" style="color:#d6c1ff; background-color:#000000; cursor:hand; padding:20px; border:0"></center></td>
+        <td><center><input type="button" value="2" name="btn_2" onclick="numero(2)" style="color:#d6c1ff; background-color:#000000; cursor:hand; padding:20px; border:0"></center></td>
+        <td><center><input type="button" value="3" name="btn_3" onclick="numero(3)" style="color:#d6c1ff; background-color:#000000; cursor:hand; padding:20px; border:0"></center></td>
+        <td><center><input type="button" value="+" name="btn_soma" onclick="operacao('+')" style="color:#d6c1ff; background-color:#000000; cursor:hand; padding:20px; border:0"></center></td>
+        </tr>
+
+        <td><center><input type="button" value="0" name="btn_0" onclick="numero(0)" style="color:#d6c1ff; background-color:#000000; cursor:hand; padding:20px; border:0 "></center></td>
+        <td = colspan="3" align = "center"><center><input type="button" value="=" name="btn_igual" onclick="operacao('=')" style=" width: 200px; color: #d6c1ff; background-color:#000000; cursor:hand; padding:20px; border:0; "></center></td>        
+    </div>
+    </table>
+    </form>
+    </center>
+
+
+
+    </body>
+    </html>
